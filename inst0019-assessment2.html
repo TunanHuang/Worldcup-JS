@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>INST0019 2022-23 Assessment 2</title>
+  <!-- link to student JavaScript code -->
+  <script src="inst0019-assessment2.js"></script>
+  <link rel="stylesheet" type="text/css" href="inst0019-assessment2.css" />
+ </head>
+ 
+ <body>
+	<h1>Football mini-league</h1>
+	<p>An interface to a football tournament</p>
+
+    <!-- add a team -->
+	<h2>Add a team</h2>
+
+	<form id="teamForm" method="get" onsubmit="return false;">
+	<br>Team name <input type=text id=teamName>
+
+	<br><button type="button" onclick="addTeam()">Add new team</button>
+	</form>
+	
+
+	<h2>Lists</h2>
+
+	<button onclick="listTeams()">List all teams</button>
+	<button onclick="createFixtures()">Create fixtures</button>
+	<button onclick="listFixtures()">List all fixtures</button>
+	<button onclick="listResults()">List all results</button>
+
+	<h2>Play</h2>
+
+	<button onclick="playNextGame()">Play next game</button>
+
+	<h2>Table</h2>
+
+	<button onclick="showTable()">Show league table</button>
+
+	<br>
+	<hr>
+	<div id="outputDiv"></div>
+
+ </body>
+</html>
